@@ -310,11 +310,11 @@
 <a class="sourceLine" id="cb1-21" data-line-number="21">## 5  -0.6393543 vanilladot    NA     NA           0.02   1  NA          &lt;NA&gt;</a>
 <a class="sourceLine" id="cb1-22" data-line-number="22">## 6  -2.5017402    polydot    NA      3           0.04   1  NA          &lt;NA&gt;</a>
 <a class="sourceLine" id="cb1-23" data-line-number="23">##   exec.time</a>
-<a class="sourceLine" id="cb1-24" data-line-number="24">## 1     0.046</a>
-<a class="sourceLine" id="cb1-25" data-line-number="25">## 2     1.379</a>
+<a class="sourceLine" id="cb1-24" data-line-number="24">## 1     0.055</a>
+<a class="sourceLine" id="cb1-25" data-line-number="25">## 2     1.531</a>
 <a class="sourceLine" id="cb1-26" data-line-number="26">## 3     0.018</a>
-<a class="sourceLine" id="cb1-27" data-line-number="27">## 4     0.020</a>
-<a class="sourceLine" id="cb1-28" data-line-number="28">## 5     0.015</a>
+<a class="sourceLine" id="cb1-27" data-line-number="27">## 4     0.013</a>
+<a class="sourceLine" id="cb1-28" data-line-number="28">## 5     0.014</a>
 <a class="sourceLine" id="cb1-29" data-line-number="29">## 6     0.014</a></code></pre></div>
 <p>See how we made the kernel parameters like <code>sigma</code> and <code>degree</code> dependent on the <code>kernel</code> selection parameters? This approach allows you to tune parameters of multiple kernels at once, efficiently concentrating on the ones which work best for your given data set.</p>
 <div id="tuning-across-whole-model-spaces-with-modelmultiplexer" class="section level1">
@@ -360,12 +360,12 @@
 <a class="sourceLine" id="cb3-31" data-line-number="31">## 5         classif.ksvm         -11.743644                         NA</a>
 <a class="sourceLine" id="cb3-32" data-line-number="32">## 6         classif.ksvm           6.600629                         NA</a>
 <a class="sourceLine" id="cb3-33" data-line-number="33">##   mmce.test.mean dob eol error.message exec.time</a>
-<a class="sourceLine" id="cb3-34" data-line-number="34">## 1     0.04000000   1  NA          &lt;NA&gt;     0.035</a>
-<a class="sourceLine" id="cb3-35" data-line-number="35">## 2     0.63333333   1  NA          &lt;NA&gt;     0.047</a>
-<a class="sourceLine" id="cb3-36" data-line-number="36">## 3     0.03333333   1  NA          &lt;NA&gt;     0.034</a>
-<a class="sourceLine" id="cb3-37" data-line-number="37">## 4     0.03333333   1  NA          &lt;NA&gt;     0.030</a>
+<a class="sourceLine" id="cb3-34" data-line-number="34">## 1     0.04000000   1  NA          &lt;NA&gt;     0.034</a>
+<a class="sourceLine" id="cb3-35" data-line-number="35">## 2     0.63333333   1  NA          &lt;NA&gt;     0.034</a>
+<a class="sourceLine" id="cb3-36" data-line-number="36">## 3     0.03333333   1  NA          &lt;NA&gt;     0.054</a>
+<a class="sourceLine" id="cb3-37" data-line-number="37">## 4     0.03333333   1  NA          &lt;NA&gt;     0.038</a>
 <a class="sourceLine" id="cb3-38" data-line-number="38">## 5     0.78000000   1  NA          &lt;NA&gt;     0.035</a>
-<a class="sourceLine" id="cb3-39" data-line-number="39">## 6     0.75333333   1  NA          &lt;NA&gt;     0.037</a></code></pre></div>
+<a class="sourceLine" id="cb3-39" data-line-number="39">## 6     0.75333333   1  NA          &lt;NA&gt;     0.043</a></code></pre></div>
 </div>
 <div id="multi-criteria-evaluation-and-optimization" class="section level1">
 <h1 class="hasAnchor">
@@ -397,12 +397,12 @@
 <a class="sourceLine" id="cb4-22" data-line-number="22">## 5 2.561725e-01 287.0735328    1.00000000          0.00   5  NA</a>
 <a class="sourceLine" id="cb4-23" data-line-number="23">## 6 3.369543e-04 312.5884023    1.00000000          0.00   6  NA</a>
 <a class="sourceLine" id="cb4-24" data-line-number="24">##   error.message exec.time</a>
-<a class="sourceLine" id="cb4-25" data-line-number="25">## 1          &lt;NA&gt;     0.036</a>
-<a class="sourceLine" id="cb4-26" data-line-number="26">## 2          &lt;NA&gt;     0.031</a>
-<a class="sourceLine" id="cb4-27" data-line-number="27">## 3          &lt;NA&gt;     0.033</a>
-<a class="sourceLine" id="cb4-28" data-line-number="28">## 4          &lt;NA&gt;     0.046</a>
-<a class="sourceLine" id="cb4-29" data-line-number="29">## 5          &lt;NA&gt;     0.035</a>
-<a class="sourceLine" id="cb4-30" data-line-number="30">## 6          &lt;NA&gt;     0.032</a></code></pre></div>
+<a class="sourceLine" id="cb4-25" data-line-number="25">## 1          &lt;NA&gt;     0.030</a>
+<a class="sourceLine" id="cb4-26" data-line-number="26">## 2          &lt;NA&gt;     0.030</a>
+<a class="sourceLine" id="cb4-27" data-line-number="27">## 3          &lt;NA&gt;     0.031</a>
+<a class="sourceLine" id="cb4-28" data-line-number="28">## 4          &lt;NA&gt;     0.031</a>
+<a class="sourceLine" id="cb4-29" data-line-number="29">## 5          &lt;NA&gt;     0.029</a>
+<a class="sourceLine" id="cb4-30" data-line-number="30">## 6          &lt;NA&gt;     0.030</a></code></pre></div>
 <p>The results can be visualized with function <code><a href="../../reference/plotTuneMultiCritResult.html">plotTuneMultiCritResult()</a></code>. The plot shows the false positive and false negative rates for all parameter settings evaluated during tuning. Points on the Pareto front are slightly increased.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw"><a href="../../reference/plotTuneMultiCritResult.html">plotTuneMultiCritResult</a></span>(res)</a></code></pre></div>
 <p><img src="advanced_tune_files/figure-html/unnamed-chunk-6-1.png" width="700"></p>

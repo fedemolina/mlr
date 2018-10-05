@@ -333,13 +333,13 @@
 <a class="sourceLine" id="cb4-12" data-line-number="12">## Optimizer: TuneControlRandom</a>
 <a class="sourceLine" id="cb4-13" data-line-number="13">## Nested CV Used: FALSE</a>
 <a class="sourceLine" id="cb4-14" data-line-number="14">## Snapshot of data:</a>
-<a class="sourceLine" id="cb4-15" data-line-number="15">##             C acc.test.mean mmce.test.mean iteration exec.time</a>
-<a class="sourceLine" id="cb4-16" data-line-number="16">## 1  7.60460179     0.7682292      0.2317708         1     1.556</a>
-<a class="sourceLine" id="cb4-17" data-line-number="17">## 2  0.05260043     0.6601562      0.3398438         2     0.129</a>
-<a class="sourceLine" id="cb4-18" data-line-number="18">## 3 15.26058967     0.7669271      0.2330729         3     0.080</a>
-<a class="sourceLine" id="cb4-19" data-line-number="19">## 4  0.06144320     0.6705729      0.3294271         4     0.047</a>
-<a class="sourceLine" id="cb4-20" data-line-number="20">## 5  0.17090943     0.7174479      0.2825521         5     0.047</a>
-<a class="sourceLine" id="cb4-21" data-line-number="21">## 6  0.35500840     0.7473958      0.2526042         6     0.047</a></code></pre></div>
+<a class="sourceLine" id="cb4-15" data-line-number="15">##           C acc.test.mean mmce.test.mean iteration exec.time</a>
+<a class="sourceLine" id="cb4-16" data-line-number="16">## 1  2.261018     0.7239583      0.2760417         1     1.690</a>
+<a class="sourceLine" id="cb4-17" data-line-number="17">## 2 20.861339     0.6927083      0.3072917         2     0.067</a>
+<a class="sourceLine" id="cb4-18" data-line-number="18">## 3  3.364082     0.7291667      0.2708333         3     0.067</a>
+<a class="sourceLine" id="cb4-19" data-line-number="19">## 4  1.218451     0.7278646      0.2721354         4     0.044</a>
+<a class="sourceLine" id="cb4-20" data-line-number="20">## 5  1.414705     0.7265625      0.2734375         5     0.045</a>
+<a class="sourceLine" id="cb4-21" data-line-number="21">## 6 16.285573     0.7044271      0.2955729         6     0.053</a></code></pre></div>
 <p>As a reminder from the <a href="resample.html" target="_blank">resampling</a> tutorial, if we wanted to generate data on the training set as well as the validation set, we only need to make a few minor changes:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">ps =<span class="st"> </span><span class="kw">makeParamSet</span>(</a>
 <a class="sourceLine" id="cb5-2" data-line-number="2">  <span class="kw">makeNumericParam</span>(<span class="st">"C"</span>, <span class="dt">lower =</span> <span class="dv">-5</span>, <span class="dt">upper =</span> <span class="dv">5</span>, <span class="dt">trafo =</span> <span class="cf">function</span>(x) <span class="dv">2</span><span class="op">^</span>x)</a>
@@ -356,20 +356,20 @@
 <a class="sourceLine" id="cb5-13" data-line-number="13">## Optimizer: TuneControlRandom</a>
 <a class="sourceLine" id="cb5-14" data-line-number="14">## Nested CV Used: FALSE</a>
 <a class="sourceLine" id="cb5-15" data-line-number="15">## Snapshot of data:</a>
-<a class="sourceLine" id="cb5-16" data-line-number="16">##             C acc.test.mean acc.train.mean mmce.test.mean mmce.train.mean</a>
-<a class="sourceLine" id="cb5-17" data-line-number="17">## 1  0.61227637     0.7695312      0.8242188      0.2304688      0.17578125</a>
-<a class="sourceLine" id="cb5-18" data-line-number="18">## 2  0.63372859     0.7721354      0.8320312      0.2278646      0.16796875</a>
-<a class="sourceLine" id="cb5-19" data-line-number="19">## 3  0.07866558     0.6666667      0.6770833      0.3333333      0.32291667</a>
-<a class="sourceLine" id="cb5-20" data-line-number="20">## 4 27.68501281     0.7070312      0.9479167      0.2929688      0.05208333</a>
-<a class="sourceLine" id="cb5-21" data-line-number="21">## 5  0.35686442     0.7708333      0.8125000      0.2291667      0.18750000</a>
-<a class="sourceLine" id="cb5-22" data-line-number="22">## 6  3.91560730     0.7500000      0.8815104      0.2500000      0.11848958</a>
+<a class="sourceLine" id="cb5-16" data-line-number="16">##            C acc.test.mean acc.train.mean mmce.test.mean mmce.train.mean</a>
+<a class="sourceLine" id="cb5-17" data-line-number="17">## 1  2.1605372     0.7578125      0.8593750      0.2421875      0.14062500</a>
+<a class="sourceLine" id="cb5-18" data-line-number="18">## 2  3.0213131     0.7513021      0.8619792      0.2486979      0.13802083</a>
+<a class="sourceLine" id="cb5-19" data-line-number="19">## 3 11.7541858     0.7174479      0.9283854      0.2825521      0.07161458</a>
+<a class="sourceLine" id="cb5-20" data-line-number="20">## 4  0.7460156     0.7630208      0.8307292      0.2369792      0.16927083</a>
+<a class="sourceLine" id="cb5-21" data-line-number="21">## 5  0.7664626     0.7604167      0.8385417      0.2395833      0.16145833</a>
+<a class="sourceLine" id="cb5-22" data-line-number="22">## 6  0.5276717     0.7539062      0.8242188      0.2460938      0.17578125</a>
 <a class="sourceLine" id="cb5-23" data-line-number="23">##   iteration exec.time</a>
-<a class="sourceLine" id="cb5-24" data-line-number="24">## 1         1     0.060</a>
-<a class="sourceLine" id="cb5-25" data-line-number="25">## 2         2     0.065</a>
-<a class="sourceLine" id="cb5-26" data-line-number="26">## 3         3     0.065</a>
-<a class="sourceLine" id="cb5-27" data-line-number="27">## 4         4     0.063</a>
-<a class="sourceLine" id="cb5-28" data-line-number="28">## 5         5     0.063</a>
-<a class="sourceLine" id="cb5-29" data-line-number="29">## 6         6     0.063</a></code></pre></div>
+<a class="sourceLine" id="cb5-24" data-line-number="24">## 1         1     0.067</a>
+<a class="sourceLine" id="cb5-25" data-line-number="25">## 2         2     0.081</a>
+<a class="sourceLine" id="cb5-26" data-line-number="26">## 3         3     0.062</a>
+<a class="sourceLine" id="cb5-27" data-line-number="27">## 4         4     0.064</a>
+<a class="sourceLine" id="cb5-28" data-line-number="28">## 5         5     0.065</a>
+<a class="sourceLine" id="cb5-29" data-line-number="29">## 6         6     0.059</a></code></pre></div>
 <p>In the example below, we perform grid search on the <code>C</code> parameter for SVM on the Pima Indians dataset using nested cross validation. We generate the hyperparameter effect data so that the <code>C</code> parameter is on the untransformed scale and we do not include diagnostic data. As you can see below, nested cross validation is supported without any extra work by the user, allowing the user to obtain an unbiased estimator for the performance.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">ps =<span class="st"> </span><span class="kw">makeParamSet</span>(</a>
 <a class="sourceLine" id="cb6-2" data-line-number="2">  <span class="kw">makeNumericParam</span>(<span class="st">"C"</span>, <span class="dt">lower =</span> <span class="dv">-5</span>, <span class="dt">upper =</span> <span class="dv">5</span>, <span class="dt">trafo =</span> <span class="cf">function</span>(x) <span class="dv">2</span><span class="op">^</span>x)</a>
@@ -387,12 +387,12 @@
 <a class="sourceLine" id="cb6-14" data-line-number="14">## Nested CV Used: TRUE</a>
 <a class="sourceLine" id="cb6-15" data-line-number="15">## Snapshot of data:</a>
 <a class="sourceLine" id="cb6-16" data-line-number="16">##            C acc.test.mean mmce.test.mean iteration exec.time</a>
-<a class="sourceLine" id="cb6-17" data-line-number="17">## 1 -5.0000000     0.6406250      0.3593750         1     0.029</a>
-<a class="sourceLine" id="cb6-18" data-line-number="18">## 2 -3.8888889     0.6406250      0.3593750         2     0.030</a>
-<a class="sourceLine" id="cb6-19" data-line-number="19">## 3 -2.7777778     0.6770833      0.3229167         3     0.030</a>
-<a class="sourceLine" id="cb6-20" data-line-number="20">## 4 -1.6666667     0.7161458      0.2838542         4     0.029</a>
-<a class="sourceLine" id="cb6-21" data-line-number="21">## 5 -0.5555556     0.7500000      0.2500000         5     0.029</a>
-<a class="sourceLine" id="cb6-22" data-line-number="22">## 6  0.5555556     0.7447917      0.2552083         6     0.029</a>
+<a class="sourceLine" id="cb6-17" data-line-number="17">## 1 -5.0000000     0.6432292      0.3567708         1     0.028</a>
+<a class="sourceLine" id="cb6-18" data-line-number="18">## 2 -3.8888889     0.6432292      0.3567708         2     0.028</a>
+<a class="sourceLine" id="cb6-19" data-line-number="19">## 3 -2.7777778     0.7005208      0.2994792         3     0.029</a>
+<a class="sourceLine" id="cb6-20" data-line-number="20">## 4 -1.6666667     0.7526042      0.2473958         4     0.028</a>
+<a class="sourceLine" id="cb6-21" data-line-number="21">## 5 -0.5555556     0.7552083      0.2447917         5     0.027</a>
+<a class="sourceLine" id="cb6-22" data-line-number="22">## 6  0.5555556     0.7317708      0.2682292         6     0.028</a>
 <a class="sourceLine" id="cb6-23" data-line-number="23">##   nested_cv_run</a>
 <a class="sourceLine" id="cb6-24" data-line-number="24">## 1             1</a>
 <a class="sourceLine" id="cb6-25" data-line-number="25">## 2             1</a>
